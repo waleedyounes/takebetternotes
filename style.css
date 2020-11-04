@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+header{
+    background-color: burlywood;
+    margin-bottom: 5px;
+    order: 1;
+    grid-column: 1/-1;
+    text-align: center;
+    color: white;
+}
+
+aside{
+    background-color: gray;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-column: 1/2;
+    order: 2;
+}
+
+main{
+    background-color: lightgray;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    grid-column: 2/4;
+    order: 3;
+}
+
+footer{
+    background-color: peachpuff;
+    color: white;
+    margin-top: 5px;
+    grid-column: 1/-1;
+    order: 5;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
